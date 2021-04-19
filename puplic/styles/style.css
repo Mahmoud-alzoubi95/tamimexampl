@@ -1,0 +1,39 @@
+.charcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+div{
+    background-color: rgb(255, 131, 131);
+    text-align: center;
+    border-radius: 15px;
+    width: 300px;
+    /* height: 225px; */
+    margin: 15px;
+    box-shadow: 5px 5px 5px ;
+}
+header{
+    height: 80px;
+    background-color: rgb(248, 161, 179);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 3px 3px 3px ;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    margin: 15px;
+    
+    background-color: crimson;
+    width: 60px;
+    height: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+input{
+    margin: 10px;
+    border-radius: 10px;
+}

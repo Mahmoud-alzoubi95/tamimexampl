@@ -9,13 +9,15 @@
 </head>
 <body>
     <header>
-        <a href="/home">home</a>
-        <a href="/character/my-fav-characters">fav</a>
-        <a href="/creatpage">creat</a>
+        <header>
+            <a href="/home">home</a>
+            <a href="/character/my-fav-characters">fav</a>
+            <a href="/creatpage">creat</a>
+        </header>
     </header>
     <main>
         <section class="charcontainer">
-            <%data.forEach(data=>{%>
+            <%favorite.forEach(data=>{%>
                 <div>
                     <p>name: <%=data.name%></p>
                     <p>house: <%=data.house%></p>
@@ -23,15 +25,9 @@
                     <p>alive: <%=data.alive%></p>
 
 
-                    <form action="/add" method="POST">
 
-                        <input type="hidden" name="name" value="<%=data.name%>">
-                        <input type="hidden" name="house" value="<%=data.house%>">
-                        <input type="hidden" name="patronus" value="<%=data.patronus%>">
-                        <input type="hidden" name="alive" value="<%=data.alive%>">
-                        <input type="submit" value="add to my fav">
+                    <a href="/detale-favorite-character/<%=data.id%>">more detales</a>
 
-                    </form>
 
                 </div>
                 <%})%>
